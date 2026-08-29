@@ -50,3 +50,4 @@ MGLTools, PyMOL/Chimera) require separate installation, not pip.
 ## Methodology
 
 Full workflow details in `docs/workflow_methodology.md`.
+
