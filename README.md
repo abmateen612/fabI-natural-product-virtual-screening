@@ -109,11 +109,11 @@ exhaustiveness=8. Top 4 representative hits per cluster across 6 clusters,
 
 **Chemical space (PCA)**
 
-![PCA Chemical Space](figures/pca/PCA_Chemical_Space.png)
+![PCA Chemical Space](figures/PCA_Chemical_Space.png)
 
 **Cluster selection (KMeans elbow/silhouette)**
 
-![KMeans Elbow and Silhouette](figures/clustering/Kmeans_Elbow_Silhouette.png)
+![KMeans Elbow and Silhouette](figures/Kmeans_Elbow_Silhouette.png)
 
 ## Requirements
 
