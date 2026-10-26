@@ -1,17 +1,12 @@
 # Data
 
-This directory contains the key tabular data generated during the final candidate prioritization stage.
+Output tables from the post-docking selection step. Both use the 128 compounds
+that scored <= -8 kcal/mol in AutoDock Vina.
 
-## Files
-
-| File | Description |
+| File | Contents |
 |---|---|
-| `final_9_candidates.csv` | Summary of the 9 final computationally prioritized FabI candidates, including docking score, heavy atoms, ligand efficiency, and interaction-analysis status |
+| `Kmeans_cluster_results.csv` | KMeans cluster (k = 4) assigned to each compound, with its docking score |
+| `Top_6_per_cluster.csv` | The top 4 compounds per cluster by docking score (16 compounds) |
 
-## Final Candidate Selection
-
-The final candidates were obtained through a sequential virtual-screening workflow:
-
-**3,404 natural-product records → 2,703 filtered compounds → 471 docking hits → 24 cluster-selected compounds → 21 after ligand-efficiency analysis → 9 final candidates after protein-ligand interaction analysis.**
-
-The dataset contains only the key final results rather than the complete intermediate compound library.
+The 16 compounds in the second file were then ranked by ligand efficiency (top 9)
+and by 2D interaction analysis (final 4). See `interaction_analysis/`.
